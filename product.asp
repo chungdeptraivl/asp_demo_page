@@ -125,7 +125,7 @@
 				if (rs.eof) then
 					response.write("<tr><td colspan=7>Tập dữ liệu rỗng!</td></tr>")
 				else
-					while not rs.eof 
+					while not rs.eof and rs.absolutepage = p 
 				%>
 					<tr>
 						<td><%=rs("pid")%></td>
